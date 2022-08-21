@@ -1,0 +1,23 @@
+import random
+cho = input("Rock, Paper or Scissors? ")
+li = ["Rock", "Paper", "Scissors"]
+opcho = random.choice(li)
+print(f"Opponent chose {opcho}.")
+if cho == "Rock" and opcho == "Rock":
+    print("You tied.")
+elif cho == "Paper" and opcho == "Paper":
+    print("You tied.")
+elif cho == "Scissors" and opcho == "Scissors":
+    print("You tied.")
+elif cho == "Paper" and opcho == "Rock":
+    print("You won.")
+elif cho == "Rock" and opcho == "Scissors":
+    print("You won.")
+elif cho == "Scissors" and opcho == "Paper":
+    print("You won.")
+elif cho == "Rock" and opcho == "Paper":
+    print("You lost.")
+elif cho == "Paper" and opcho == "Scissors":
+    print("You lost.")
+elif cho == "Scissors" and opcho == "Rock":
+    print("You lost.")
